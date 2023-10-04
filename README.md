@@ -12,7 +12,7 @@ This is a sample project that contains a POC application that listens to webhook
 Clone the repository:
 
 ```bash
-git clone 
+git clone git@github.com:apideck-samples/ats-to-hris.git
 ```
 
 Install the dependencies:
