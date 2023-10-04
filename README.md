@@ -1,11 +1,11 @@
-# Apideck: POC Applicant to Employee Onboarding
+# Apideck: Sample application to push ATS Applicant to HRIS Employee Onboarding
 
-This is a sample project that contains a POC application that listens to webhooks from Apideck's Unified APIs and push hired Applicant (ATS) to HRIS systems for Employee Onboarding.
+This is a sample project that contains a POC application that listens to webhooks from Apideck's Unified APIs and pushes hired Applicant (ATS) to HRIS systems for Employee Onboarding.
 
 **Prerequisites**: 
  - [Node.js](https://nodejs.org/en/)
  - [Apideck account](https://platform.apideck.com/configuration/api-keys).
- - A consumer that has access to an ATS integration (like "TeamTailor") and a HRIS integration (like humaans-io).
+ - A consumer that has access to an ATS integration (like "TeamTailor") and an HRIS integration (like humaans-io).
 
 ## Getting started
 
