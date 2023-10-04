@@ -1,0 +1,16 @@
+{
+  "name": "ats-to-hris",
+  "version": "1.0.0",
+  "description": "Sample application for ATS to HRIS integration",
+  "scripts": {
+    "start": "node app_hired_candidate_employee.mjs",
+    "start:ngrok": "node ngrok-server.js"
+  },
+  "dependencies": {
+    "@apideck/node": "^2.9.2",
+    "concurrently": "^8.2.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ngrok": "^5.0.0-beta.2"
+  }
+}

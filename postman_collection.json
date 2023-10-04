@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "effd0c14-c461-4c20-a68d-95b2a7150cde",
+		"name": "Apideck: POC ATS-HRIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23325373"
+	},
+	"item": [
+		{
+			"name": "Trigger Hired Candidate ATS -> Employee HRIS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"payload\": {\n    \"event_type\": \"ats.application.updated\",\n    \"unified_api\": \"ats\",\n    \"service_id\": \"teamtailor\",\n    \"consumer_id\": \"test-consumer\",\n    \"event_id\": \"d290f1ee-6c54-4b01-90e6-d701748f0851\",\n    \"entity_id\": \"67305287\",\n    \"entity_url\": \"https://unify.apideck.com/ats/applications/67305287\",\n    \"entity_type\": \"application\",\n    \"occurred_at\": \"2023-09-22T00:00:00.000Z\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app_url}}/start",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping App",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app_url}}",
+					"host": [
+						"{{app_url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "app_url",
+			"value": "127.0.0.1:7777",
+			"type": "string"
+		}
+	]
+}
