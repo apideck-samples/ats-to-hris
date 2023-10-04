@@ -44,10 +44,7 @@ Now you can launch the app locally:
 npm start
 ```
 
-Alternatively, you can run one of the following apps:
-    `npm run start`
-
-The app runs by default on port 7777
+The app runs by default on port 7777 and is accessible on http://127.0.0.1:7777
 
 ## Making this app public with ngrok
 
